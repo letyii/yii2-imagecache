@@ -1,0 +1,19 @@
+{
+    "name": "letyii/yii2-imagecache",
+    "description": "Image cache for yii2",
+    "homepage": "https://github.com/letyii/yii2-imagecache",
+    "keywords": ["yii2","cache", "image", "thumbnail"],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4",
+        "yiisoft/yii2": "*",
+        "yiisoft/yii2-imagine": "*",
+        "bower-asset/imagecache": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "letyii\\imagecache\\": ""
+        }
+    }
+}
