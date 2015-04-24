@@ -9,7 +9,6 @@
         "php": ">=5.4",
         "yiisoft/yii2": "*",
         "yiisoft/yii2-imagine": "*",
-        "bower-asset/imagecache": "*"
     },
     "autoload": {
         "psr-4": {
