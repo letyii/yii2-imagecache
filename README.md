@@ -30,12 +30,12 @@ to the require section of your application's `composer.json` file.
 
 ## Usage Example
 ~~~php
-<?= Yii::$app->imageCache->imgSrc('@web/uploads/test.jpg', 'x200') ?>
-// output: /your-app/uploads/cache/x200/.../test.jpg
+echo Yii::$app->imageCache->imgSrc('@web/uploads/test.jpg', 'x200');
+// Output: /your-app/uploads/cache/x200/.../test.jpg
 
-<?= Yii::$app->imageCache->img('@web/uploads/test.jpg', '100x') ?>
-// <img src="/your-app/uploads/cache/100x/.../test.jpg" alt="">
+echo Yii::$app->imageCache->img('@web/uploads/test.jpg', '100x');
+// Output: <img src="/your-app/uploads/cache/100x/.../test.jpg" alt="" />
 
-<?= Yii::$app->imageCache->img('@web/uploads/test.jpg', '100x150', ['class'=>'test', 'alt' => 'Test image']) ?>
-// <img src="/your-app/uploads/cache/100x120/.../test.jpg" alt="" class="img" alt="Test image">
+echo Yii::$app->imageCache->img('@web/uploads/test.jpg', '100x150', ['class'=>'test', 'alt' => 'Test image']);
+// Output: <img src="/your-app/uploads/cache/100x120/.../test.jpg" alt="" class="img" alt="Test image" />
 ~~~
