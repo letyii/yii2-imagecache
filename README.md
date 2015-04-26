@@ -1,5 +1,11 @@
 # yii2-imagecache
 
+## Features
+- [x] Image resize on demand
+- [x] Imagick support
+- [ ] GD support
+- [ ] Amazon S3 support
+
 ## Installation
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
