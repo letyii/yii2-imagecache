@@ -6,7 +6,7 @@ use Yii;
 use yii\helpers\Html;
 use yii\helpers\BaseFileHelper;
 
-class ImageCache extends \yii\base\Component
+class imageCache extends \yii\base\Component
 {
 
     public $defaultSize = '800x';
