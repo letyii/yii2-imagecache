@@ -17,7 +17,7 @@ php composer.phar require "letyii/yii2-imagecache" "dev-master"
 or add
 
 ```json
-"letyii/yii2-imagecache": "dev-master"
+"letyii/yii2-imagecache": "*"
 ```
 
 to the require section of your application's `composer.json` file.
@@ -27,7 +27,7 @@ to the require section of your application's `composer.json` file.
 'components' => [
     ...
     'imageCache' => [
-        'class' => 'letyii\imagecache\ImageCache',
+        'class' => 'letyii\imagecache\imageCache',
         'cachePath' => '@app/uploads/cache',
         'cacheUrl' => '@web/uploads/cache',
     ],
