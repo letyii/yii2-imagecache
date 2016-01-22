@@ -87,6 +87,10 @@ class imageCache extends \yii\base\Component
      */
     private function createCachedFile($srcImagePath, $pathToSave, $size = null)
     {
+        if (!file_exists($srcImagePath) || is_file($srcImagePath)) {
+            return false;
+        }
+		
         BaseFileHelper::createDirectory(dirname($pathToSave), 0777, true);
         $size = $size ? $this->parseSize($size) : false;
 //        if($this->graphicsLibrary == 'Imagick'){
