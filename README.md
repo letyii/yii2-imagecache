@@ -30,6 +30,7 @@ to the require section of your application's `composer.json` file.
         'class' => 'letyii\imagecache\imageCache',
         'cachePath' => '@app/uploads/cache',
         'cacheUrl' => '@web/uploads/cache',
+        //"CompressionQuality" => 80 //Optional or view Yii::$app->imageCache->CompressionQuality = 80
     ],
 ]
 ~~~

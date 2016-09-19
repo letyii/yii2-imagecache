@@ -12,11 +12,13 @@ class imageCache extends \yii\base\Component
     public $defaultSize = '800x';
 
     public $cachePath;
-    
+
     public $cacheUrl;
-    
+
     public $graphicsLibrary = 'Imagick';
-    
+
+    public $CompressionQuality = 100;
+
     /**
      * @inheritdoc
      */
@@ -90,12 +92,12 @@ class imageCache extends \yii\base\Component
         if (!file_exists($srcImagePath) || !is_file($srcImagePath)) {
             return false;
         }
-		
+
         BaseFileHelper::createDirectory(dirname($pathToSave), 0777, true);
         $size = $size ? $this->parseSize($size) : false;
 //        if($this->graphicsLibrary == 'Imagick'){
             $image = new \Imagick($srcImagePath);
-            $image->setImageCompressionQuality(100);
+            $image->setImageCompressionQuality($this->CompressionQuality);
             if($size){
                 if($size['height'] && $size['width']){
                     $image->cropThumbnailImage($size['width'], $size['height']);
